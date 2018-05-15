@@ -1,2 +1,5 @@
 .DS_Store
 .deps-proj/
+
+unix/deploy-settings.xml
+windows/deploy-settings.xml
