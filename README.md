@@ -16,7 +16,7 @@ This tool contains two command line scripts:
 ## Usage
 
 
-**First**, prepare the artifact and its dependencies for the migration, this will apply your maven settings on necessary:
+**First**, prepare the materials, this will apply your maven settings on necessary:
 
 ```powershell
 PS> .\resolve.ps1 org.springframework.security spring-security-web 5.0.0.RELEASE 
@@ -26,7 +26,7 @@ Use spaces to separate *groupId*, *artifactId* and *version* fields and pass the
 
 <br />
 
-**Next**, the migrating step, deploy the prepared artifact and dependencies to destination repository. On the same directory you run `resolve`, execute:
+**Next**, the migrating step. On the same directory you ran `resolve`, execute:
  ```powershell
 PS> .\deploy.ps1 http://your-target-repo/ [http://repo-for-detecting/]
 ```
